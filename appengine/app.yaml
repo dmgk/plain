@@ -1,0 +1,15 @@
+runtime: go
+api_version: go1.8
+
+default_expiration: "24h"
+
+handlers:
+- url: /.*
+  script: _go_app
+  secure: always
+
+skip_files:
+- ^(.*/)?\..*$
+- ^Makefile$
+- LICENSE
+- README.md
