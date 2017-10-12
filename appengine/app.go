@@ -4,8 +4,8 @@ package plain
 import (
 	"net/http"
 
-	"github.com/enodata/plain/handler"
-	"github.com/enodata/plain/storage"
+	"github.com/dmgk/plain/handler"
+	"github.com/dmgk/plain/storage"
 )
 
 func init() {

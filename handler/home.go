@@ -64,7 +64,7 @@ var homeTmpl = `
 		</p>
 		<h2>SOURCE CODE</h2>
 		<p>
-			<a href="https://github.com/enodata/plain">https://github.com/enodata/plain</a>
+			<a href="https://github.com/dmgk/plain">https://github.com/dmgk/plain</a>
 		</p>
 		<h2>LICENSE</h2>
 		<p>

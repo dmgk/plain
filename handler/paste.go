@@ -9,7 +9,7 @@ import (
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/log"
 
-	"github.com/enodata/plain/storage"
+	"github.com/dmgk/plain/storage"
 )
 
 const (
