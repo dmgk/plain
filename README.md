@@ -2,6 +2,8 @@
 
 plain.im is a plaintext paste service with 24 hours expiration time.
 
+    go get -u syreclabs.com/dg/plain
+
 #### API
 
 Paste the command output:

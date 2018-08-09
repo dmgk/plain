@@ -1,13 +1,15 @@
-.PHONY: all
-all: plain
+APPID=		plain-im
+VERSION!=	date +%Y%m%d-%H%M%S
+SOURCES!=	find . -type f -name \*.go
 
-SOURCES := $(shell find . -type f -name \*.go)
-
-plain: $(SOURCES)
-	go build ./...
+plain: ${SOURCES}
+	goapp build ./...
 
 server: plain
-	goapp serve appengine
+	goapp serve app
 
 deploy:
-	goapp deploy -application plain-im -version 1 appengine
+	goapp deploy -application ${APPID} -version ${VERSION} app
+
+clean:
+	-rm -f ./plain

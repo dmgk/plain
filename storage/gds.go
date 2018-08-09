@@ -74,9 +74,7 @@ func (s *gdsStore) Expire(ctx context.Context) error {
 	return datastore.DeleteMulti(ctx, keys)
 }
 
-// Strongly consistent sharded counter implementation.
-// Based on https://cloud.google.com/appengine/articles/sharding_counters
-// but with lookup by keys for strong consistency.
+// Sharded counter implementation, based on https://cloud.google.com/appengine/articles/sharding_counters
 
 func (s *gdsStore) nextKey(ctx context.Context) (*datastore.Key, error) {
 	// increment counter in a randomly selected shard

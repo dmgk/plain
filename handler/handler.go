@@ -3,8 +3,8 @@ package handler
 import (
 	"net/http"
 
-	"github.com/dmgk/plain/storage"
 	"github.com/gorilla/pat"
+	"syreclabs.com/dg/plain/storage"
 )
 
 var store storage.Store
