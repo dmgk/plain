@@ -1,13 +1,11 @@
 package main
 
 import (
-	"fmt"
-	"log"
 	"net/http"
-	"os"
 
 	"github.com/dmgk/plain/handler"
 	"github.com/dmgk/plain/storage"
+	"google.golang.org/appengine"
 )
 
 func main() {
@@ -16,11 +14,13 @@ func main() {
 
 	http.Handle("/", r)
 
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080"
-	}
+	appengine.Main()
 
-	log.Printf("Listening on %s", port)
-	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
+	// port := os.Getenv("PORT")
+	// if port == "" {
+	//     port = "8080"
+	// }
+	//
+	// log.Printf("Listening on %s", port)
+	// log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
 }
