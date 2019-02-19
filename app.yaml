@@ -1,0 +1,9 @@
+runtime: go111
+
+default_expiration: 24h
+
+handlers:
+- url: /.*
+  script: auto
+  secure: always
+  redirect_http_response_code: 301
