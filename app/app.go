@@ -1,10 +1,10 @@
-package app // import "syreclabs.com/dg/plain/app"
+package app
 
 import (
 	"net/http"
 
-	"syreclabs.com/dg/plain/handler"
-	"syreclabs.com/dg/plain/storage"
+	"github.com/dmgk/plain/handler"
+	"github.com/dmgk/plain/storage"
 )
 
 func init() {
