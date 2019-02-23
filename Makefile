@@ -1,4 +1,3 @@
-VERSION !=	date +%Y%m%d-%H%M%S
 SOURCES !=	find . -type f -name \*.go
 
 plain: ${SOURCES}
